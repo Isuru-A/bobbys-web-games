@@ -11,7 +11,7 @@ const MemoryGameHome = ({ onStart }: GameHomeProps) => (
     <MemoryGameGrid />
     <div className="game-info">
       <p>
-        Size <strong>5 x 5</strong>
+          Size <strong>5</strong> x <strong>5</strong>
       </p>
       <p>
         Time limit <strong>20s</strong>
