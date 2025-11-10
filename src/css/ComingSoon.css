@@ -1,0 +1,19 @@
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.coming-soon-title {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.coming-soon-text {
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}

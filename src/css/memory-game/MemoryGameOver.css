@@ -1,0 +1,47 @@
+.game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.game-over-title {
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.game-over-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.retry-button,
+.exit-button {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+.retry-button {
+    background-color: var(--color-accent);
+}
+
+.exit-button {
+    background-color: var(--color-accent);
+    /* Design uses same color for both, maybe slightly different shade? sticking to accent for now based on screenshot */
+}
+
+.retry-button:hover,
+.exit-button:hover {
+    opacity: 0.9;
+}

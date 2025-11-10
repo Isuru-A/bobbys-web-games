@@ -1,0 +1,60 @@
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar--floating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    background: transparent;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.sidebar-header {
+    /* Header stays at top naturally due to flex column */
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+}
+
+.sidebar-subtitle {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin: auto 0;
+    /* Center vertically */
+}
+
+.game-item {
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.game-item:hover {
+    color: var(--color-text-primary);
+}
+
+.game-item.active {
+    color: var(--color-accent);
+}
